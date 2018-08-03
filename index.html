@@ -1,0 +1,38 @@
+<html>
+<head><title>
+    抽奖啦
+</title>
+    <meta charset="UTF-8">
+</head>
+<body style="text-align: center">
+<div style="width:400px;text-align: center;margin: 0 auto">
+<div>
+    规则:0.1eth参加一次抽奖，roll点0-9， roll出数字8 ，那么获得奖池1/3的奖金返还给抽奖账户。
+</div>
+<div style="font-size:30px;margin-top:100px">
+    奖池：<span id="total">--</span>eth
+</div>
+<button>
+    0.1eth抽奖
+</button>
+
+<script>
+    window.addEventListener('load', function() {
+        if (typeof web3 !== 'undefined') {
+            var provider = web3.currentProvider
+        } else {
+            alert('需要安装MetaMask钱包插件')
+        }
+        webinit()
+    })
+    function webinit() {
+        
+    }
+</script>
+
+
+</body>
+</div>
+
+</html>
+
